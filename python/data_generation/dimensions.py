@@ -3,7 +3,7 @@ import random
 import numpy as np
 import pandas as pd
 
-from config import (
+from data_generation.config import (
     N_PROJECTS,
     N_ENGINEERS,
     N_EQUIPMENT,
