@@ -1,24 +1,3 @@
-"""
-Engineering Data Foundation & Digital Transformation Dashboard
-Synthetic Dataset Generator
-
-This script generates CSV tables for an engineering data analytics portfolio project.
-
-Generated tables:
-- fact_engineering_deliverables.csv
-- dim_project.csv
-- dim_discipline.csv
-- dim_document_type.csv
-- dim_status.csv
-- dim_engineer.csv
-- dim_equipment.csv
-- dim_date.csv
-
-Main objective:
-Simulate an engineering company moving from document-based project tracking
-to structured, data-driven reporting with data quality rules.
-"""
-
 import random
 
 import numpy as np
@@ -42,6 +21,12 @@ from data_generation.fact_deliverables import create_fact_engineering_deliverabl
 
 from data_generation.data_quality import inject_data_quality_issues
 
+from data_generation.export import (
+    export_tables,
+    print_table_summary,
+)
+
+
 # ============================================================
 # SETUP
 # ============================================================
@@ -61,46 +46,6 @@ def setup_environment() -> None:
 
 
 # ============================================================
-# EXPORT
-# ============================================================
-
-def export_table(dataframe, file_name: str) -> None:
-    """
-    Exports a dataframe as a CSV file.
-    """
-
-    output_path = RAW_DATA_DIR / file_name
-
-    dataframe.to_csv(
-        output_path,
-        index=False,
-        encoding="utf-8-sig",
-    )
-
-
-# ============================================================
-# SUMMARY
-# ============================================================
-
-def print_table_summary(tables: dict) -> None:
-    """
-    Prints a simple summary of generated tables.
-    """
-
-    print("\nGenerated tables:")
-    print("-" * 60)
-
-    for table_name, dataframe in tables.items():
-        print(
-            f"{table_name}: "
-            f"{len(dataframe):,} rows | "
-            f"{len(dataframe.columns)} columns"
-        )
-
-    print("-" * 60)
-
-
-# ============================================================
 # MAIN
 # ============================================================
 
@@ -111,6 +56,10 @@ def main() -> None:
 
     setup_environment()
 
+    # -----------------------------
+    # Create dimensions
+    # -----------------------------
+
     dim_discipline = create_dim_discipline()
     dim_document_type = create_dim_document_type()
     dim_status = create_dim_status()
@@ -118,6 +67,10 @@ def main() -> None:
     dim_engineer = create_dim_engineer(dim_discipline)
     dim_equipment = create_dim_equipment()
     dim_date = create_dim_date()
+
+    # -----------------------------
+    # Create fact table
+    # -----------------------------
 
     fact_engineering_deliverables = create_fact_engineering_deliverables(
         dim_project=dim_project,
@@ -128,11 +81,19 @@ def main() -> None:
         dim_equipment=dim_equipment,
     )
 
+    # -----------------------------
+    # Inject data quality issues
+    # -----------------------------
+
     inject_data_quality_issues(
         fact_engineering_deliverables=fact_engineering_deliverables,
         dim_equipment=dim_equipment,
         dim_project=dim_project,
     )
+
+    # -----------------------------
+    # Export tables
+    # -----------------------------
 
     tables = {
         "fact_engineering_deliverables.csv": fact_engineering_deliverables,
@@ -145,15 +106,11 @@ def main() -> None:
         "dim_date.csv": dim_date,
     }
 
-    for file_name, dataframe in tables.items():
-        export_table(
-            dataframe=dataframe,
-            file_name=file_name,
-        )
+    export_tables(tables)
 
     print_table_summary(tables)
 
-    print("\nDimension tables generated successfully.")
+    print("\nDataset generated successfully.")
     print(f"Output folder: {RAW_DATA_DIR.resolve()}")
 
 
