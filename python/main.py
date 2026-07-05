@@ -40,6 +40,7 @@ from data_generation.dimensions import (
 
 from data_generation.fact_deliverables import create_fact_engineering_deliverables
 
+from data_generation.data_quality import inject_data_quality_issues
 
 # ============================================================
 # SETUP
@@ -125,6 +126,12 @@ def main() -> None:
         dim_status=dim_status,
         dim_engineer=dim_engineer,
         dim_equipment=dim_equipment,
+    )
+
+    inject_data_quality_issues(
+        fact_engineering_deliverables=fact_engineering_deliverables,
+        dim_equipment=dim_equipment,
+        dim_project=dim_project,
     )
 
     tables = {
