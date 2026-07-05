@@ -38,6 +38,8 @@ from data_generation.dimensions import (
     create_dim_date,
 )
 
+from data_generation.fact_deliverables import create_fact_engineering_deliverables
+
 
 # ============================================================
 # SETUP
@@ -116,7 +118,17 @@ def main() -> None:
     dim_equipment = create_dim_equipment()
     dim_date = create_dim_date()
 
+    fact_engineering_deliverables = create_fact_engineering_deliverables(
+        dim_project=dim_project,
+        dim_discipline=dim_discipline,
+        dim_document_type=dim_document_type,
+        dim_status=dim_status,
+        dim_engineer=dim_engineer,
+        dim_equipment=dim_equipment,
+    )
+
     tables = {
+        "fact_engineering_deliverables.csv": fact_engineering_deliverables,
         "dim_project.csv": dim_project,
         "dim_discipline.csv": dim_discipline,
         "dim_document_type.csv": dim_document_type,
