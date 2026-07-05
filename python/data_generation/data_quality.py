@@ -1,5 +1,3 @@
-# python/data_generation/data_quality.py
-
 import random
 
 import numpy as np
