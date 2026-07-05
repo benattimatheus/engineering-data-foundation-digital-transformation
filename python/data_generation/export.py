@@ -28,7 +28,7 @@ def export_table(
     dataframe.to_csv(
         output_path,
         index=False,
-        encoding="utf-8-sig",
+        encoding="utf-8",
     )
 
     return output_path
