@@ -24,10 +24,10 @@ PROCESSED_DATA_DIR = DATA_DIR / "processed"
 # DATASET SIZE
 # ============================================================
 
-N_PROJECTS = 6
-N_ENGINEERS = 45
-N_EQUIPMENT = 120
-N_DELIVERABLES = 750
+N_PROJECTS = 18
+N_ENGINEERS = 120
+N_EQUIPMENT = 800
+N_DELIVERABLES = 20000
 
 
 # ============================================================

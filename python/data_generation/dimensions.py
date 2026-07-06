@@ -114,12 +114,8 @@ def create_dim_project(n_projects: int = N_PROJECTS) -> pd.DataFrame:
     """
 
     project_names = [
-        "API Manufacturing Expansion",
-        "Sterile Filling Line Upgrade",
-        "Utility Systems Modernization",
-        "Warehouse Automation Program",
-        "Cleanroom Capacity Increase",
-        "Validation Documentation Recovery",
+        f"Engineering Project {i:02d}"
+        for i in range(1, n_projects + 1)
     ]
 
     clients = [
