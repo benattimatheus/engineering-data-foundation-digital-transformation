@@ -284,9 +284,9 @@ def inject_data_quality_issues(
         fact_engineering_deliverables=fact_engineering_deliverables,
     )
 
-    inject_invalid_date_issues(
+    """inject_invalid_date_issues(
         fact_engineering_deliverables=fact_engineering_deliverables,
-    )
+    )"""
 
     inject_workflow_issues(
         fact_engineering_deliverables=fact_engineering_deliverables,

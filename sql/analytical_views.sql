@@ -91,43 +91,71 @@ SELECT
     END AS is_closed,
 
     CASE
-        WHEN s.status_name NOT IN ('Approved', 'Cancelled')
-             OR s.status_name IS NULL
-        THEN TRUE
+        WHEN s.status_name IN (
+            'Not Started',
+            'In Progress',
+            'Under Review',
+            'Rejected',
+            'Delayed'
+        ) THEN TRUE
         ELSE FALSE
     END AS is_pending,
 
     CASE
-        WHEN s.status_name NOT IN ('Approved', 'Cancelled')
+        WHEN s.status_name IN ('Not Started', 'In Progress', 'Delayed')
+             AND f.actual_submission_date IS NULL
              AND f.planned_submission_date < prm.reference_date
         THEN TRUE
+
+        WHEN s.status_name IN ('Under Review', 'Rejected')
+             AND f.actual_approval_date IS NULL
+             AND f.planned_approval_date < prm.reference_date
+        THEN TRUE
+
         ELSE FALSE
     END AS is_overdue,
 
     CASE
         WHEN f.actual_submission_date IS NOT NULL
+             AND f.planned_submission_date IS NOT NULL
         THEN f.actual_submission_date - f.planned_submission_date
+        ELSE NULL
+    END AS submission_variance_days,
 
-        WHEN f.actual_submission_date IS NULL
+    CASE
+        WHEN f.actual_submission_date IS NOT NULL
+             AND f.planned_submission_date IS NOT NULL
+             AND f.actual_submission_date > f.planned_submission_date
+        THEN f.actual_submission_date - f.planned_submission_date
+        ELSE 0
+    END AS late_submission_days,
+
+    CASE
+        WHEN s.status_name IN ('Not Started', 'In Progress', 'Delayed')
+             AND f.actual_submission_date IS NULL
              AND f.planned_submission_date < prm.reference_date
         THEN prm.reference_date - f.planned_submission_date
 
+        WHEN s.status_name IN ('Under Review', 'Rejected')
+             AND f.actual_approval_date IS NULL
+             AND f.planned_approval_date < prm.reference_date
+        THEN prm.reference_date - f.planned_approval_date
+
         ELSE 0
-    END AS delay_days,
+    END AS current_overdue_days,
 
     CASE
         WHEN f.actual_submission_date IS NOT NULL
              AND f.actual_approval_date IS NOT NULL
         THEN f.actual_approval_date - f.actual_submission_date
-
         ELSE NULL
     END AS review_cycle_days,
 
     CASE
         WHEN s.status_name = 'Under Review'
              AND f.actual_submission_date IS NOT NULL
+             AND f.actual_submission_date <= prm.reference_date
         THEN prm.reference_date - f.actual_submission_date
-
         ELSE NULL
     END AS days_under_review,
 
@@ -221,9 +249,9 @@ SELECT
     ) AS deliverables_with_quality_issues_rate,
 
     ROUND(
-        AVG(delay_days)::NUMERIC,
+        AVG(current_overdue_days)::NUMERIC,
         2
-    ) AS average_delay_days,
+    ) AS average_current_overdue_days,
 
     ROUND(
         AVG(review_cycle_days)::NUMERIC,
@@ -286,9 +314,9 @@ SELECT
     ) AS average_days_under_review,
 
     ROUND(
-        AVG(delay_days)::NUMERIC,
+        AVG(current_overdue_days)::NUMERIC,
         2
-    ) AS average_delay_days
+    ) AS average_current_overdue_days
 
 FROM vw_deliverables_overview
 
@@ -328,9 +356,9 @@ SELECT
     ) AS deliverables_with_quality_issues,
 
     ROUND(
-        AVG(delay_days)::NUMERIC,
+        AVG(current_overdue_days)::NUMERIC,
         2
-    ) AS average_delay_days,
+    ) AS average_current_overdue_days,
 
     ROUND(
         AVG(days_under_review)::NUMERIC,

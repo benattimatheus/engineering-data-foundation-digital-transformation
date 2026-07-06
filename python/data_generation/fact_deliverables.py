@@ -5,8 +5,7 @@ import pandas as pd
 
 from data_generation.config import (
     N_DELIVERABLES,
-    DELIVERABLE_START_DATE,
-    DELIVERABLE_PLANNING_DAYS,
+    REFERENCE_DATE,
 )
 
 
@@ -75,61 +74,109 @@ def get_engineer_for_discipline(
         dim_engineer["responsible_engineer_id"].tolist()
     )
 
+def get_project_dates(
+    project_id: str,
+    dim_project: pd.DataFrame,
+) -> tuple[pd.Timestamp, pd.Timestamp]:
+    """
+    Returns project start and end dates.
+    """
+
+    project_row = dim_project.loc[
+        dim_project["project_id"] == project_id
+    ].iloc[0]
+
+    return (
+        pd.Timestamp(project_row["project_start_date"]),
+        pd.Timestamp(project_row["project_end_date"]),
+    )
 
 def generate_dates_for_status(
     status_name: str,
     planned_submission_date: pd.Timestamp,
+    planned_approval_date: pd.Timestamp,
+    project_start_date: pd.Timestamp,
+    reference_date: pd.Timestamp = REFERENCE_DATE,
 ) -> tuple[pd.Timestamp | pd.NaT, pd.Timestamp | pd.NaT]:
     """
-    Generates actual submission and approval dates according to the workflow status.
+    Generates actual dates according to deliverable status.
+    Actual dates cannot be after the reference date.
     """
 
-    if status_name in ["Approved", "Rejected"]:
+    max_actual_date = min(reference_date, planned_approval_date)
+
+    if status_name == "Not Started":
+        return pd.NaT, pd.NaT
+
+    if status_name == "In Progress":
+        return pd.NaT, pd.NaT
+
+    if status_name == "Delayed":
+        return pd.NaT, pd.NaT
+
+    if status_name == "Cancelled":
+        return pd.NaT, pd.NaT
+
+    if status_name == "Under Review":
+        latest_submission_date = min(reference_date, planned_approval_date)
+
         actual_submission_date = planned_submission_date + pd.to_timedelta(
-            random.randint(-5, 25),
+            random.randint(-5, 10),
             unit="D",
         )
+
+        if actual_submission_date < project_start_date:
+            actual_submission_date = project_start_date
+
+        if actual_submission_date > latest_submission_date:
+            actual_submission_date = latest_submission_date
+
+        return actual_submission_date, pd.NaT
+
+    if status_name == "Rejected":
+        latest_submission_date = min(reference_date, planned_approval_date)
+
+        actual_submission_date = planned_submission_date + pd.to_timedelta(
+            random.randint(-5, 15),
+            unit="D",
+        )
+
+        if actual_submission_date < project_start_date:
+            actual_submission_date = project_start_date
+
+        if actual_submission_date > latest_submission_date:
+            actual_submission_date = latest_submission_date
+
+        return actual_submission_date, pd.NaT
+
+    if status_name == "Approved":
+        latest_approval_date = min(reference_date, planned_approval_date + pd.to_timedelta(15, unit="D"))
+
+        actual_submission_date = planned_submission_date + pd.to_timedelta(
+            random.randint(-5, 10),
+            unit="D",
+        )
+
+        if actual_submission_date < project_start_date:
+            actual_submission_date = project_start_date
+
+        if actual_submission_date > latest_approval_date:
+            actual_submission_date = latest_approval_date - pd.to_timedelta(2, unit="D")
 
         actual_approval_date = actual_submission_date + pd.to_timedelta(
-            random.randint(2, 30),
+            random.randint(2, 15),
             unit="D",
         )
 
-    elif status_name == "Under Review":
-        actual_submission_date = planned_submission_date + pd.to_timedelta(
-            random.randint(-3, 20),
-            unit="D",
-        )
+        if actual_approval_date > reference_date:
+            actual_approval_date = reference_date
 
-        actual_approval_date = pd.NaT
+        if actual_approval_date < actual_submission_date:
+            actual_approval_date = actual_submission_date
 
-    elif status_name == "Delayed":
-        if random.random() < 0.55:
-            actual_submission_date = pd.NaT
-        else:
-            actual_submission_date = planned_submission_date + pd.to_timedelta(
-                random.randint(10, 45),
-                unit="D",
-            )
+        return actual_submission_date, actual_approval_date
 
-        actual_approval_date = pd.NaT
-
-    elif status_name == "Cancelled":
-        actual_submission_date = pd.NaT
-        actual_approval_date = pd.NaT
-
-    else:
-        if random.random() < 0.75:
-            actual_submission_date = pd.NaT
-        else:
-            actual_submission_date = planned_submission_date + pd.to_timedelta(
-                random.randint(-2, 10),
-                unit="D",
-            )
-
-        actual_approval_date = pd.NaT
-
-    return actual_submission_date, actual_approval_date
+    return pd.NaT, pd.NaT
 
 
 # ============================================================
@@ -190,18 +237,26 @@ def create_fact_engineering_deliverables(
             dim_engineer=dim_engineer,
         )
 
-        status_id = np.random.choice(
-            status_ids,
-            p=status_probabilities,
+        project_start_date, project_end_date = get_project_dates(
+            project_id=project_id,
+            dim_project=dim_project,
         )
 
-        status_name = get_status_name(
-            status_id=status_id,
-            dim_status=dim_status,
+        latest_planned_submission_date = project_end_date - pd.to_timedelta(
+            25,
+            unit="D",
         )
 
-        planned_submission_date = DELIVERABLE_START_DATE + pd.to_timedelta(
-            random.randint(0, DELIVERABLE_PLANNING_DAYS),
+        if latest_planned_submission_date < project_start_date:
+            latest_planned_submission_date = project_start_date
+
+        available_days = max(
+            1,
+            (latest_planned_submission_date - project_start_date).days,
+        )
+
+        planned_submission_date = project_start_date + pd.to_timedelta(
+            random.randint(0, available_days),
             unit="D",
         )
 
@@ -210,9 +265,30 @@ def create_fact_engineering_deliverables(
             unit="D",
         )
 
+        if planned_approval_date > project_end_date:
+            planned_approval_date = project_end_date
+
+        if planned_submission_date > REFERENCE_DATE:
+            status_id = np.random.choice(
+                ["STAT-001", "STAT-002"],
+                p=[0.70, 0.30],
+            )
+        else:
+            status_id = np.random.choice(
+                status_ids,
+                p=status_probabilities,
+            )
+
+        status_name = get_status_name(
+            status_id=status_id,
+            dim_status=dim_status,
+        )
+
         actual_submission_date, actual_approval_date = generate_dates_for_status(
             status_name=status_name,
             planned_submission_date=planned_submission_date,
+            planned_approval_date=planned_approval_date,
+            project_start_date=project_start_date,
         )
 
         revision_number = np.random.choice(
@@ -233,21 +309,38 @@ def create_fact_engineering_deliverables(
             unit="D",
         )
 
+        if created_date > REFERENCE_DATE:
+            created_date = REFERENCE_DATE - pd.to_timedelta(
+                random.randint(30, 120),
+                unit="D",
+            )
+
+        if created_date < project_start_date:
+            created_date = project_start_date
+
+        if created_date > REFERENCE_DATE:
+            created_date = REFERENCE_DATE
+
         valid_dates = [
             date_value
             for date_value in [
                 created_date,
-                planned_submission_date,
                 actual_submission_date,
                 actual_approval_date,
             ]
-            if pd.notna(date_value)
+            if pd.notna(date_value) and date_value <= REFERENCE_DATE
         ]
 
-        last_updated_date = max(valid_dates) + pd.to_timedelta(
-            random.randint(0, 10),
-            unit="D",
-        )
+        if valid_dates:
+            last_updated_date = max(valid_dates) + pd.to_timedelta(
+                random.randint(0, 10),
+                unit="D",
+            )
+        else:
+            last_updated_date = created_date
+
+        if last_updated_date > REFERENCE_DATE:
+            last_updated_date = REFERENCE_DATE
 
         document_type_name = get_document_type_name(
             document_type_id=document_type_id,

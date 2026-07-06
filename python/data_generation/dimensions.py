@@ -138,7 +138,6 @@ def create_dim_project(n_projects: int = N_PROJECTS) -> pd.DataFrame:
     project_statuses = [
         "Active",
         "On Hold",
-        "Completed",
         "Delayed",
     ]
 
@@ -167,7 +166,7 @@ def create_dim_project(n_projects: int = N_PROJECTS) -> pd.DataFrame:
                 f"PRJ-{i:03d}"
                 for i in range(1, n_projects + 1)
             ],
-            "project_name": project_names[:n_projects],
+            "project_name": project_names,
             "client": np.random.choice(
                 clients,
                 size=n_projects,
@@ -186,7 +185,7 @@ def create_dim_project(n_projects: int = N_PROJECTS) -> pd.DataFrame:
             "project_status": np.random.choice(
                 project_statuses,
                 size=n_projects,
-                p=[0.60, 0.10, 0.15, 0.15],
+                p=[0.70, 0.10, 0.20],
             ),
         }
     )
