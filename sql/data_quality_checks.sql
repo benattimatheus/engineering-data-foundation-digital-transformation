@@ -181,7 +181,7 @@ issues AS (
         status_id, status_name,
         'Missing Metadata',
         'Missing Project Phase',
-        'Medium',
+        'Low',
         'Project phase is missing in dim_project.'
     FROM base
     WHERE NULLIF(TRIM(project_phase), '') IS NULL
@@ -325,7 +325,7 @@ issues AS (
         status_id, status_name,
         'Invalid Value',
         'Invalid Equipment Criticality',
-        'Medium',
+        'Low',
         'Equipment criticality must be High, Medium, or Low.'
     FROM base
     WHERE equipment_id IS NOT NULL
@@ -500,7 +500,7 @@ issues AS (
         status_id, status_name,
         'Invalid Date',
         'Suspicious Early Submission',
-        'Medium',
+        'Low',
         'Actual submission happened more than the allowed threshold before the planned submission date.'
     FROM base
     WHERE actual_submission_date IS NOT NULL
@@ -714,7 +714,7 @@ issues AS (
         status_id, status_name,
         'Invalid Value',
         'Invalid Revision Number',
-        'Medium',
+        'Low',
         'Revision number must be between 0 and 5.'
     FROM base
     WHERE revision_number < 0
