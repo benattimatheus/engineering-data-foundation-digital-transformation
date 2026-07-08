@@ -1,0 +1,19 @@
+project_id,project_name,client,project_phase,project_manager,project_start_date,project_end_date,project_status
+PRJ-001,Engineering Project 01,PharmaPlus,,Project Manager 1,2025-01-01 00:00:00.000000,2025-12-09 00:00:00.000000,Active
+PRJ-002,Engineering Project 02,BioNordic,Detailed Design,Project Manager 2,2025-01-17 01:24:42.352941,2026-06-11 01:24:42.352941,Active
+PRJ-003,Engineering Project 03,LifeSciences Group,Concept,Project Manager 3,2025-02-02 02:49:24.705882,2026-01-14 02:49:24.705882,Delayed
+PRJ-004,Engineering Project 04,PharmaPlus,Qualification,Project Manager 4,2025-02-18 04:14:07.058823,2025-12-26 04:14:07.058823,Active
+PRJ-005,Engineering Project 05,NovoPharma,Construction,Project Manager 5,2025-03-06 05:38:49.411764,2026-05-08 05:38:49.411764,Active
+PRJ-006,Engineering Project 06,NovoPharma,Detailed Design,Project Manager 6,2025-03-22 07:03:31.764705,2025-12-07 07:03:31.764705,Delayed
+PRJ-007,Engineering Project 07,MedCore,Concept,Project Manager 7,2025-04-07 08:28:14.117647,2026-03-15 08:28:14.117647,On Hold
+PRJ-008,Engineering Project 08,MedCore,Detailed Design,Project Manager 8,2025-04-23 09:52:56.470588,2026-04-19 09:52:56.470588,Active
+PRJ-009,Engineering Project 09,BioNordic,Detailed Design,Project Manager 9,2025-05-09 11:17:38.823529,2026-08-06 11:17:38.823529,Active
+PRJ-010,Engineering Project 10,PharmaPlus,Construction,Project Manager 10,2025-05-25 12:42:21.176470,2026-04-17 12:42:21.176470,Active
+PRJ-011,Engineering Project 11,PharmaPlus,Construction,Project Manager 11,2025-06-10 14:07:03.529411,2026-05-15 14:07:03.529411,Delayed
+PRJ-012,Engineering Project 12,MedCore,Commissioning,Project Manager 12,2025-06-26 15:31:45.882352,2026-07-22 15:31:45.882352,Delayed
+PRJ-013,Engineering Project 13,PharmaPlus,Basic Design,Project Manager 13,2025-07-12 16:56:28.235294,2026-07-17 16:56:28.235294,On Hold
+PRJ-014,Engineering Project 14,PharmaPlus,Detailed Design,Project Manager 14,2025-07-28 18:21:10.588235,2026-08-21 18:21:10.588235,Active
+PRJ-015,Engineering Project 15,NovoPharma,Basic Design,Project Manager 15,2025-08-13 19:45:52.941176,2026-12-23 19:45:52.941176,Active
+PRJ-016,Engineering Project 16,MedCore,Construction,Project Manager 16,2025-08-29 21:10:35.294117,2026-11-03 21:10:35.294117,Delayed
+PRJ-017,Engineering Project 17,LifeSciences Group,,Project Manager 17,2025-09-14 22:35:17.647058,2027-02-12 22:35:17.647058,Active
+PRJ-018,Engineering Project 18,MedCore,,Project Manager 18,2025-10-01 00:00:00.000000,2026-11-05 00:00:00.000000,Active

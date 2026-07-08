@@ -1,0 +1,8 @@
+status_id,status_name,status_group
+STAT-001,Not Started,Open
+STAT-002,In Progress,Open
+STAT-003,Under Review,Review
+STAT-004,Approved,Closed
+STAT-005,Rejected,Review
+STAT-006,Delayed,Open
+STAT-007,Cancelled,Closed

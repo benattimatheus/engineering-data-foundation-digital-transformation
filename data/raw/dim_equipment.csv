@@ -1,0 +1,801 @@
+equipment_id,equipment_tag,equipment_type,area,system,criticality
+EQ-0001,PS-1001,Pipe System,Area 100,HVAC System,Medium
+EQ-0002,T-1002,Tank,Area 400,WFI System,Low
+EQ-0003,F-1003,Filter,Cleanroom Area,CIP System,Medium
+EQ-0004,HX-1004,Heat Exchanger,Cleanroom Area,Automation System,Low
+EQ-0005,CP-1005,Control Panel,Utility Area,Automation System,Medium
+EQ-0006,F-1006,Filter,Area 400,Electrical System,Low
+EQ-0007,CP-1007,Control Panel,Area 300,CIP System,High
+EQ-0008,CP-1008,Control Panel,Area 400,CIP System,Medium
+EQ-0009,R-1009,Reactor,Area 300,Process System,Medium
+EQ-0010,PS-1010,Pipe System,Area 200,HVAC System,High
+EQ-0011,PS-1011,Pipe System,Area 300,WFI System,Medium
+EQ-0012,CP-1012,Control Panel,Utility Area,Process System,Low
+EQ-0013,V-1013,Valve,Area 100,CIP System,Low
+EQ-0014,R-1014,Reactor,Area 400,Automation System,High
+EQ-0015,F-1015,Filter,Cleanroom Area,Electrical System,Medium
+EQ-0016,F-1016,Filter,Area 100,Process System,Medium
+EQ-0017,V-1017,Valve,Area 400,Electrical System,High
+EQ-0018,CP-1018,Control Panel,Cleanroom Area,Automation System,Medium
+EQ-0019,F-1019,Filter,Utility Area,Automation System,Medium
+EQ-0020,R-1020,Reactor,Cleanroom Area,Automation System,Medium
+EQ-0021,PS-1021,Pipe System,Cleanroom Area,HVAC System,Medium
+EQ-0022,CP-1022,Control Panel,Area 300,CIP System,High
+EQ-0023,V-1023,Valve,Area 300,Process System,Low
+EQ-0024,HX-1024,Heat Exchanger,Area 200,CIP System,Low
+EQ-0025,F-1025,Filter,Area 300,Electrical System,Low
+EQ-0026,CP-1026,Control Panel,Area 100,CIP System,Medium
+EQ-0027,V-1027,Valve,Area 300,CIP System,Medium
+EQ-0028,P-1028,Pump,Cleanroom Area,Automation System,High
+EQ-0029,CP-1029,Control Panel,Area 100,Process System,Low
+EQ-0030,CP-1030,Control Panel,Cleanroom Area,CIP System,Low
+EQ-0031,F-1031,Filter,Area 100,Process System,Low
+EQ-0032,CP-1032,Control Panel,Area 400,HVAC System,Medium
+EQ-0033,PS-1033,Pipe System,Area 200,Process System,Medium
+EQ-0034,F-1034,Filter,Area 100,Process System,Medium
+EQ-0035,F-1035,Filter,Area 100,Automation System,Low
+EQ-0036,P-1036,Pump,Area 200,CIP System,Low
+EQ-0037,CP-1037,Control Panel,Area 100,CIP System,High
+EQ-0038,R-1038,Reactor,Utility Area,Automation System,Low
+EQ-0039,V-1039,Valve,Utility Area,HVAC System,Medium
+EQ-0040,F-1040,Filter,Area 300,Automation System,Medium
+EQ-0041,CP-1041,Control Panel,Utility Area,Automation System,High
+EQ-0042,T-1042,Tank,Area 200,Electrical System,Undefined
+EQ-0043,CP-1043,Control Panel,Cleanroom Area,Process System,Undefined
+EQ-0044,V-1044,Valve,Area 200,Automation System,High
+EQ-0045,HX-1045,Heat Exchanger,Area 100,HVAC System,Undefined
+EQ-0046,F-1046,Filter,Area 300,Process System,High
+EQ-0047,CP-1047,Control Panel,Cleanroom Area,WFI System,Low
+EQ-0048,F-1048,Filter,Area 100,Electrical System,High
+EQ-0049,CP-1049,Control Panel,Cleanroom Area,Automation System,Low
+EQ-0050,V-1050,Valve,Area 400,Process System,Low
+EQ-0051,V-1051,Valve,Cleanroom Area,CIP System,Medium
+EQ-0052,HX-1052,Heat Exchanger,Area 100,Process System,High
+EQ-0053,CP-1053,Control Panel,Utility Area,Electrical System,Low
+EQ-0054,CP-1054,Control Panel,Area 400,Process System,Medium
+EQ-0055,CP-1055,Control Panel,Cleanroom Area,HVAC System,Medium
+EQ-0056,F-1056,Filter,Area 400,Process System,Low
+EQ-0057,P-1057,Pump,Area 400,Electrical System,Medium
+EQ-0058,CP-1058,Control Panel,Area 100,Process System,High
+EQ-0059,P-1059,Pump,Cleanroom Area,WFI System,Low
+EQ-0060,P-1060,Pump,Area 200,HVAC System,Low
+EQ-0061,F-1061,Filter,Area 300,CIP System,Low
+EQ-0062,R-1062,Reactor,Cleanroom Area,HVAC System,High
+EQ-0063,F-1063,Filter,Area 300,HVAC System,Medium
+EQ-0064,PS-1064,Pipe System,Cleanroom Area,Process System,High
+EQ-0065,PS-1065,Pipe System,Area 400,Electrical System,Medium
+EQ-0066,CP-1066,Control Panel,Cleanroom Area,HVAC System,Low
+EQ-0067,P-1067,Pump,Area 400,Process System,Medium
+EQ-0068,CP-1068,Control Panel,Area 300,Process System,Medium
+EQ-0069,P-1069,Pump,Cleanroom Area,Automation System,Medium
+EQ-0070,R-1070,Reactor,Area 100,CIP System,Low
+EQ-0071,PS-1071,Pipe System,Utility Area,HVAC System,Low
+EQ-0072,F-1072,Filter,Area 100,CIP System,Medium
+EQ-0073,HX-1073,Heat Exchanger,Area 300,HVAC System,Low
+EQ-0074,F-1074,Filter,Area 100,Process System,Low
+EQ-0075,V-1075,Valve,Cleanroom Area,CIP System,Medium
+EQ-0076,P-1076,Pump,Utility Area,HVAC System,High
+EQ-0077,V-1077,Valve,Area 100,HVAC System,High
+EQ-0078,HX-1078,Heat Exchanger,Area 400,Electrical System,Medium
+EQ-0079,CP-1079,Control Panel,Area 400,HVAC System,Medium
+EQ-0080,V-1080,Valve,Area 400,Automation System,High
+EQ-0081,R-1081,Reactor,Area 200,Automation System,Low
+EQ-0082,HX-1082,Heat Exchanger,Area 100,WFI System,Medium
+EQ-0083,PS-1083,Pipe System,Utility Area,WFI System,High
+EQ-0084,CP-1084,Control Panel,Cleanroom Area,WFI System,Low
+EQ-0085,F-1085,Filter,Area 200,HVAC System,Low
+EQ-0086,F-1086,Filter,Area 300,WFI System,Low
+EQ-0087,R-1087,Reactor,Area 400,WFI System,High
+EQ-0088,V-1088,Valve,Utility Area,HVAC System,High
+EQ-0089,R-1089,Reactor,Area 100,WFI System,Low
+EQ-0090,F-1090,Filter,Cleanroom Area,HVAC System,Medium
+EQ-0091,HX-1091,Heat Exchanger,Area 400,Process System,High
+EQ-0092,PS-1092,Pipe System,Area 100,HVAC System,High
+EQ-0093,F-1093,Filter,Area 100,Electrical System,High
+EQ-0094,R-1094,Reactor,Cleanroom Area,CIP System,High
+EQ-0095,F-1095,Filter,Area 300,WFI System,Low
+EQ-0096,R-1096,Reactor,Cleanroom Area,Process System,Medium
+EQ-0097,R-1097,Reactor,Area 300,Electrical System,Low
+EQ-0098,F-1098,Filter,Utility Area,Process System,Low
+EQ-0099,T-1099,Tank,Area 200,Electrical System,Low
+EQ-0100,CP-1100,Control Panel,Area 200,Electrical System,High
+EQ-0101,R-1101,Reactor,Area 100,Electrical System,Low
+EQ-0102,T-1102,Tank,Area 400,CIP System,Low
+EQ-0103,CP-1103,Control Panel,Area 100,Process System,Medium
+EQ-0104,P-1104,Pump,Area 300,WFI System,Medium
+EQ-0105,R-1105,Reactor,Area 200,CIP System,Low
+EQ-0106,R-1106,Reactor,Utility Area,Electrical System,High
+EQ-0107,HX-1107,Heat Exchanger,Area 200,Process System,Low
+EQ-0108,R-1108,Reactor,Utility Area,Electrical System,High
+EQ-0109,F-1109,Filter,Utility Area,CIP System,High
+EQ-0110,F-1110,Filter,Cleanroom Area,WFI System,Medium
+EQ-0111,CP-1111,Control Panel,Cleanroom Area,Process System,Medium
+EQ-0112,CP-1112,Control Panel,Cleanroom Area,Automation System,High
+EQ-0113,T-1113,Tank,Area 400,WFI System,Low
+EQ-0114,CP-1114,Control Panel,Cleanroom Area,HVAC System,Low
+EQ-0115,CP-1115,Control Panel,Area 400,WFI System,High
+EQ-0116,R-1116,Reactor,Area 400,Process System,High
+EQ-0117,R-1117,Reactor,Utility Area,WFI System,Low
+EQ-0118,CP-1118,Control Panel,Cleanroom Area,WFI System,High
+EQ-0119,R-1119,Reactor,Area 300,Process System,Low
+EQ-0120,P-1120,Pump,Utility Area,Electrical System,Medium
+EQ-0121,CP-1121,Control Panel,Area 200,Automation System,Medium
+EQ-0122,V-1122,Valve,Cleanroom Area,CIP System,Low
+EQ-0123,CP-1123,Control Panel,Cleanroom Area,Electrical System,Low
+EQ-0124,HX-1124,Heat Exchanger,Cleanroom Area,Process System,Low
+EQ-0125,P-1125,Pump,Area 300,HVAC System,High
+EQ-0126,PS-1126,Pipe System,Cleanroom Area,CIP System,High
+EQ-0127,CP-1127,Control Panel,Area 300,Electrical System,Medium
+EQ-0128,HX-1128,Heat Exchanger,Area 200,CIP System,Low
+EQ-0129,PS-1129,Pipe System,Utility Area,Automation System,Medium
+EQ-0130,HX-1130,Heat Exchanger,Area 300,HVAC System,Medium
+EQ-0131,PS-1131,Pipe System,Area 100,HVAC System,High
+EQ-0132,HX-1132,Heat Exchanger,Area 200,Electrical System,Low
+EQ-0133,R-1133,Reactor,Utility Area,WFI System,High
+EQ-0134,R-1134,Reactor,Area 100,WFI System,Low
+EQ-0135,T-1135,Tank,Area 400,WFI System,Low
+EQ-0136,CP-1136,Control Panel,Utility Area,HVAC System,Low
+EQ-0137,PS-1137,Pipe System,Area 100,Electrical System,High
+EQ-0138,F-1138,Filter,Area 100,Automation System,Low
+EQ-0139,PS-1139,Pipe System,Utility Area,CIP System,Low
+EQ-0140,T-1140,Tank,Cleanroom Area,HVAC System,Undefined
+EQ-0141,CP-1141,Control Panel,Cleanroom Area,HVAC System,High
+EQ-0142,HX-1142,Heat Exchanger,Area 100,Process System,Medium
+EQ-0143,F-1143,Filter,Area 100,Process System,High
+EQ-0144,HX-1144,Heat Exchanger,Area 400,HVAC System,Medium
+EQ-0145,R-1145,Reactor,Utility Area,Electrical System,Undefined
+EQ-0146,HX-1146,Heat Exchanger,Area 400,Electrical System,High
+EQ-0147,F-1147,Filter,Utility Area,HVAC System,Medium
+EQ-0148,P-1148,Pump,Cleanroom Area,WFI System,High
+EQ-0149,F-1149,Filter,Area 400,CIP System,Medium
+EQ-0150,T-1150,Tank,Cleanroom Area,WFI System,Low
+EQ-0151,PS-1151,Pipe System,Area 100,HVAC System,Medium
+EQ-0152,V-1152,Valve,Area 100,HVAC System,High
+EQ-0153,V-1153,Valve,Cleanroom Area,Electrical System,Low
+EQ-0154,P-1154,Pump,Area 100,WFI System,High
+EQ-0155,HX-1155,Heat Exchanger,Utility Area,CIP System,High
+EQ-0156,V-1156,Valve,Utility Area,CIP System,High
+EQ-0157,PS-1157,Pipe System,Area 200,Automation System,High
+EQ-0158,CP-1158,Control Panel,Area 200,CIP System,Low
+EQ-0159,CP-1159,Control Panel,Area 200,Process System,Low
+EQ-0160,P-1160,Pump,Area 200,Process System,Medium
+EQ-0161,V-1161,Valve,Utility Area,WFI System,High
+EQ-0162,HX-1162,Heat Exchanger,Area 300,Process System,High
+EQ-0163,R-1163,Reactor,Utility Area,Process System,Low
+EQ-0164,T-1164,Tank,Area 400,HVAC System,Medium
+EQ-0165,T-1165,Tank,Area 400,Automation System,High
+EQ-0166,P-1166,Pump,Cleanroom Area,Electrical System,Low
+EQ-0167,CP-1167,Control Panel,Area 400,Electrical System,High
+EQ-0168,P-1168,Pump,Area 400,HVAC System,Medium
+EQ-0169,T-1169,Tank,Area 400,Electrical System,Medium
+EQ-0170,T-1170,Tank,Area 100,WFI System,Low
+EQ-0171,HX-1171,Heat Exchanger,Area 100,CIP System,Medium
+EQ-0172,PS-1172,Pipe System,Area 400,Automation System,Low
+EQ-0173,CP-1173,Control Panel,Area 400,Automation System,Low
+EQ-0174,R-1174,Reactor,Area 100,Electrical System,High
+EQ-0175,V-1175,Valve,Area 400,HVAC System,High
+EQ-0176,R-1176,Reactor,Area 300,HVAC System,Medium
+EQ-0177,R-1177,Reactor,Cleanroom Area,Process System,Medium
+EQ-0178,R-1178,Reactor,Area 300,Electrical System,Medium
+EQ-0179,PS-1179,Pipe System,Area 200,Electrical System,Medium
+EQ-0180,T-1180,Tank,Area 100,Process System,High
+EQ-0181,R-1181,Reactor,Area 100,Electrical System,Low
+EQ-0182,PS-1182,Pipe System,Area 200,Automation System,High
+EQ-0183,PS-1183,Pipe System,Cleanroom Area,Process System,Medium
+EQ-0184,PS-1184,Pipe System,Cleanroom Area,HVAC System,Low
+EQ-0185,P-1185,Pump,Area 300,Automation System,Medium
+EQ-0186,PS-1186,Pipe System,Area 100,Automation System,Low
+EQ-0187,V-1187,Valve,Area 200,Electrical System,Medium
+EQ-0188,V-1188,Valve,Area 100,WFI System,Low
+EQ-0189,PS-1189,Pipe System,Area 100,WFI System,Low
+EQ-0190,V-1190,Valve,Area 400,Automation System,Undefined
+EQ-0191,P-1191,Pump,Utility Area,Electrical System,Low
+EQ-0192,CP-1192,Control Panel,Area 100,CIP System,Medium
+EQ-0193,CP-1193,Control Panel,Area 300,WFI System,High
+EQ-0194,HX-1194,Heat Exchanger,Area 200,Automation System,Low
+EQ-0195,R-1195,Reactor,Area 100,CIP System,Low
+EQ-0196,P-1196,Pump,Area 100,Electrical System,Undefined
+EQ-0197,V-1197,Valve,Area 400,HVAC System,Medium
+EQ-0198,PS-1198,Pipe System,Area 200,WFI System,Medium
+EQ-0199,PS-1199,Pipe System,Utility Area,Automation System,High
+EQ-0200,P-1200,Pump,Area 200,CIP System,Low
+EQ-0201,P-1201,Pump,Cleanroom Area,Process System,Medium
+EQ-0202,F-1202,Filter,Cleanroom Area,HVAC System,Medium
+EQ-0203,F-1203,Filter,Area 400,WFI System,High
+EQ-0204,T-1204,Tank,Area 300,HVAC System,High
+EQ-0205,CP-1205,Control Panel,Cleanroom Area,Electrical System,Low
+EQ-0206,F-1206,Filter,Utility Area,Electrical System,Medium
+EQ-0207,P-1207,Pump,Area 200,HVAC System,Low
+EQ-0208,P-1208,Pump,Area 100,CIP System,Medium
+EQ-0209,V-1209,Valve,Area 200,WFI System,Medium
+EQ-0210,PS-1210,Pipe System,Area 100,Process System,Medium
+EQ-0211,R-1211,Reactor,Area 200,CIP System,Medium
+EQ-0212,V-1212,Valve,Utility Area,Automation System,Low
+EQ-0213,PS-1213,Pipe System,Area 100,HVAC System,Low
+EQ-0214,P-1214,Pump,Area 400,Process System,Medium
+EQ-0215,T-1215,Tank,Area 300,Automation System,Medium
+EQ-0216,R-1216,Reactor,Cleanroom Area,Electrical System,Medium
+EQ-0217,CP-1217,Control Panel,Area 100,HVAC System,High
+EQ-0218,PS-1218,Pipe System,Area 200,Automation System,Medium
+EQ-0219,PS-1219,Pipe System,Area 100,HVAC System,High
+EQ-0220,V-1220,Valve,Area 400,Automation System,Medium
+EQ-0221,T-1221,Tank,Area 400,WFI System,Low
+EQ-0222,PS-1222,Pipe System,Area 200,WFI System,High
+EQ-0223,T-1223,Tank,Utility Area,Electrical System,High
+EQ-0224,V-1224,Valve,Area 300,WFI System,Low
+EQ-0225,HX-1225,Heat Exchanger,Area 200,Process System,High
+EQ-0226,CP-1226,Control Panel,Area 200,CIP System,Low
+EQ-0227,HX-1227,Heat Exchanger,Cleanroom Area,Process System,High
+EQ-0228,F-1228,Filter,Area 400,Automation System,Low
+EQ-0229,F-1229,Filter,Cleanroom Area,Automation System,Low
+EQ-0230,PS-1230,Pipe System,Cleanroom Area,WFI System,High
+EQ-0231,F-1231,Filter,Area 100,HVAC System,Medium
+EQ-0232,CP-1232,Control Panel,Area 300,Automation System,High
+EQ-0233,PS-1233,Pipe System,Utility Area,Process System,Undefined
+EQ-0234,F-1234,Filter,Area 400,Process System,High
+EQ-0235,PS-1235,Pipe System,Area 300,Process System,Low
+EQ-0236,T-1236,Tank,Utility Area,Automation System,Low
+EQ-0237,R-1237,Reactor,Area 400,Automation System,Low
+EQ-0238,P-1238,Pump,Area 400,Automation System,Low
+EQ-0239,V-1239,Valve,Area 300,Automation System,Medium
+EQ-0240,HX-1240,Heat Exchanger,Area 100,HVAC System,High
+EQ-0241,PS-1241,Pipe System,Cleanroom Area,Process System,Low
+EQ-0242,HX-1242,Heat Exchanger,Area 100,CIP System,Low
+EQ-0243,F-1243,Filter,Area 400,Automation System,Low
+EQ-0244,HX-1244,Heat Exchanger,Area 300,WFI System,Medium
+EQ-0245,R-1245,Reactor,Area 400,WFI System,Low
+EQ-0246,P-1246,Pump,Cleanroom Area,Electrical System,Medium
+EQ-0247,T-1247,Tank,Area 300,Process System,Low
+EQ-0248,R-1248,Reactor,Area 300,WFI System,Low
+EQ-0249,HX-1249,Heat Exchanger,Area 300,Process System,Undefined
+EQ-0250,HX-1250,Heat Exchanger,Area 300,WFI System,Low
+EQ-0251,R-1251,Reactor,Area 200,Automation System,Low
+EQ-0252,T-1252,Tank,Area 300,Automation System,Medium
+EQ-0253,PS-1253,Pipe System,Area 200,Electrical System,Low
+EQ-0254,T-1254,Tank,Cleanroom Area,Electrical System,Undefined
+EQ-0255,PS-1255,Pipe System,Area 100,WFI System,Undefined
+EQ-0256,HX-1256,Heat Exchanger,Area 200,WFI System,Medium
+EQ-0257,V-1257,Valve,Area 200,CIP System,High
+EQ-0258,T-1258,Tank,Area 300,Process System,Low
+EQ-0259,P-1259,Pump,Cleanroom Area,WFI System,Low
+EQ-0260,HX-1260,Heat Exchanger,Utility Area,HVAC System,High
+EQ-0261,HX-1261,Heat Exchanger,Area 200,Electrical System,Low
+EQ-0262,HX-1262,Heat Exchanger,Cleanroom Area,HVAC System,High
+EQ-0263,R-1263,Reactor,Area 300,Electrical System,Low
+EQ-0264,V-1264,Valve,Area 400,Automation System,Medium
+EQ-0265,F-1265,Filter,Area 200,Automation System,High
+EQ-0266,CP-1266,Control Panel,Area 400,CIP System,Medium
+EQ-0267,F-1267,Filter,Area 400,WFI System,Medium
+EQ-0268,R-1268,Reactor,Area 200,CIP System,Low
+EQ-0269,HX-1269,Heat Exchanger,Area 300,Process System,Low
+EQ-0270,F-1270,Filter,Area 300,Automation System,High
+EQ-0271,T-1271,Tank,Area 300,Process System,High
+EQ-0272,CP-1272,Control Panel,Area 400,Automation System,High
+EQ-0273,R-1273,Reactor,Area 100,CIP System,Medium
+EQ-0274,PS-1274,Pipe System,Area 100,HVAC System,High
+EQ-0275,R-1275,Reactor,Utility Area,WFI System,High
+EQ-0276,R-1276,Reactor,Area 100,WFI System,High
+EQ-0277,P-1277,Pump,Area 300,Process System,Low
+EQ-0278,PS-1278,Pipe System,Area 200,CIP System,High
+EQ-0279,CP-1279,Control Panel,Area 400,Electrical System,High
+EQ-0280,F-1280,Filter,Area 400,Automation System,High
+EQ-0281,T-1281,Tank,Area 100,WFI System,High
+EQ-0282,HX-1282,Heat Exchanger,Utility Area,Electrical System,Low
+EQ-0283,R-1283,Reactor,Area 100,WFI System,High
+EQ-0284,CP-1284,Control Panel,Area 100,Process System,High
+EQ-0285,R-1285,Reactor,Cleanroom Area,Automation System,Medium
+EQ-0286,T-1286,Tank,Area 100,HVAC System,Low
+EQ-0287,P-1287,Pump,Cleanroom Area,Automation System,Low
+EQ-0288,V-1288,Valve,Cleanroom Area,CIP System,Medium
+EQ-0289,R-1289,Reactor,Area 100,Automation System,Medium
+EQ-0290,V-1290,Valve,Utility Area,HVAC System,Undefined
+EQ-0291,T-1291,Tank,Utility Area,WFI System,High
+EQ-0292,P-1292,Pump,Area 400,HVAC System,High
+EQ-0293,R-1293,Reactor,Area 300,WFI System,Low
+EQ-0294,P-1294,Pump,Area 300,Process System,Medium
+EQ-0295,V-1295,Valve,Cleanroom Area,Electrical System,Low
+EQ-0296,T-1296,Tank,Utility Area,Electrical System,Medium
+EQ-0297,HX-1297,Heat Exchanger,Area 100,WFI System,Low
+EQ-0298,PS-1298,Pipe System,Cleanroom Area,CIP System,Low
+EQ-0299,F-1299,Filter,Cleanroom Area,HVAC System,Low
+EQ-0300,HX-1300,Heat Exchanger,Area 200,Process System,Low
+EQ-0301,F-1301,Filter,Area 100,WFI System,High
+EQ-0302,P-1302,Pump,Area 200,Process System,Medium
+EQ-0303,CP-1303,Control Panel,Utility Area,HVAC System,Low
+EQ-0304,F-1304,Filter,Area 300,Process System,Low
+EQ-0305,V-1305,Valve,Area 300,WFI System,High
+EQ-0306,PS-1306,Pipe System,Area 300,Process System,Medium
+EQ-0307,R-1307,Reactor,Area 400,Electrical System,Medium
+EQ-0308,R-1308,Reactor,Area 300,CIP System,Medium
+EQ-0309,F-1309,Filter,Area 300,Automation System,Medium
+EQ-0310,T-1310,Tank,Cleanroom Area,HVAC System,High
+EQ-0311,R-1311,Reactor,Utility Area,CIP System,Low
+EQ-0312,CP-1312,Control Panel,Area 300,Process System,High
+EQ-0313,PS-1313,Pipe System,Cleanroom Area,WFI System,Medium
+EQ-0314,F-1314,Filter,Utility Area,Electrical System,Medium
+EQ-0315,HX-1315,Heat Exchanger,Cleanroom Area,HVAC System,Medium
+EQ-0316,F-1316,Filter,Area 100,Electrical System,Medium
+EQ-0317,R-1317,Reactor,Area 300,Electrical System,High
+EQ-0318,T-1318,Tank,Cleanroom Area,Electrical System,Medium
+EQ-0319,PS-1319,Pipe System,Utility Area,Electrical System,Low
+EQ-0320,HX-1320,Heat Exchanger,Area 100,CIP System,Low
+EQ-0321,F-1321,Filter,Area 100,CIP System,High
+EQ-0322,V-1322,Valve,Cleanroom Area,WFI System,Medium
+EQ-0323,R-1323,Reactor,Utility Area,Process System,Low
+EQ-0324,HX-1324,Heat Exchanger,Cleanroom Area,HVAC System,Medium
+EQ-0325,PS-1325,Pipe System,Area 400,Process System,Low
+EQ-0326,HX-1326,Heat Exchanger,Utility Area,WFI System,Medium
+EQ-0327,PS-1327,Pipe System,Cleanroom Area,WFI System,High
+EQ-0328,T-1328,Tank,Area 100,Electrical System,High
+EQ-0329,F-1329,Filter,Utility Area,HVAC System,Low
+EQ-0330,T-1330,Tank,Area 300,WFI System,Low
+EQ-0331,F-1331,Filter,Area 200,Automation System,Medium
+EQ-0332,F-1332,Filter,Area 200,Process System,High
+EQ-0333,T-1333,Tank,Area 400,CIP System,Low
+EQ-0334,F-1334,Filter,Area 100,Electrical System,Medium
+EQ-0335,PS-1335,Pipe System,Cleanroom Area,Process System,Low
+EQ-0336,CP-1336,Control Panel,Area 300,CIP System,Low
+EQ-0337,HX-1337,Heat Exchanger,Area 300,Automation System,High
+EQ-0338,T-1338,Tank,Area 200,CIP System,High
+EQ-0339,F-1339,Filter,Area 100,WFI System,Low
+EQ-0340,PS-1340,Pipe System,Area 400,Automation System,High
+EQ-0341,T-1341,Tank,Area 100,WFI System,Medium
+EQ-0342,F-1342,Filter,Utility Area,HVAC System,Medium
+EQ-0343,T-1343,Tank,Area 200,WFI System,Low
+EQ-0344,T-1344,Tank,Area 400,HVAC System,Low
+EQ-0345,PS-1345,Pipe System,Area 200,Automation System,Low
+EQ-0346,HX-1346,Heat Exchanger,Area 200,HVAC System,Low
+EQ-0347,P-1347,Pump,Area 100,Automation System,High
+EQ-0348,CP-1348,Control Panel,Area 200,CIP System,Medium
+EQ-0349,V-1349,Valve,Area 300,Automation System,Medium
+EQ-0350,T-1350,Tank,Area 300,CIP System,Low
+EQ-0351,CP-1351,Control Panel,Area 200,Electrical System,Medium
+EQ-0352,T-1352,Tank,Utility Area,Electrical System,High
+EQ-0353,HX-1353,Heat Exchanger,Area 200,Electrical System,Low
+EQ-0354,PS-1354,Pipe System,Utility Area,Process System,High
+EQ-0355,T-1355,Tank,Area 100,Electrical System,Low
+EQ-0356,CP-1356,Control Panel,Cleanroom Area,CIP System,Low
+EQ-0357,R-1357,Reactor,Utility Area,Electrical System,High
+EQ-0358,F-1358,Filter,Cleanroom Area,Automation System,Medium
+EQ-0359,CP-1359,Control Panel,Area 400,CIP System,Low
+EQ-0360,R-1360,Reactor,Area 300,HVAC System,High
+EQ-0361,P-1361,Pump,Area 200,HVAC System,Medium
+EQ-0362,F-1362,Filter,Area 400,CIP System,Medium
+EQ-0363,HX-1363,Heat Exchanger,Area 300,Electrical System,Medium
+EQ-0364,PS-1364,Pipe System,Area 400,CIP System,Medium
+EQ-0365,T-1365,Tank,Area 300,CIP System,Medium
+EQ-0366,T-1366,Tank,Area 300,HVAC System,High
+EQ-0367,HX-1367,Heat Exchanger,Area 100,Process System,Medium
+EQ-0368,R-1368,Reactor,Utility Area,HVAC System,High
+EQ-0369,HX-1369,Heat Exchanger,Area 300,Automation System,Low
+EQ-0370,PS-1370,Pipe System,Area 200,CIP System,Medium
+EQ-0371,F-1371,Filter,Area 400,WFI System,Medium
+EQ-0372,P-1372,Pump,Area 100,HVAC System,Low
+EQ-0373,F-1373,Filter,Area 200,CIP System,Low
+EQ-0374,PS-1374,Pipe System,Area 100,Process System,Medium
+EQ-0375,F-1375,Filter,Utility Area,Electrical System,Low
+EQ-0376,F-1376,Filter,Area 300,Automation System,Undefined
+EQ-0377,T-1377,Tank,Area 400,CIP System,Medium
+EQ-0378,PS-1378,Pipe System,Area 400,WFI System,High
+EQ-0379,R-1379,Reactor,Area 100,Automation System,Undefined
+EQ-0380,V-1380,Valve,Area 300,Automation System,Medium
+EQ-0381,T-1381,Tank,Area 400,Automation System,Medium
+EQ-0382,CP-1382,Control Panel,Utility Area,Electrical System,Low
+EQ-0383,T-1383,Tank,Area 200,Process System,Medium
+EQ-0384,PS-1384,Pipe System,Area 300,Automation System,Medium
+EQ-0385,HX-1385,Heat Exchanger,Area 200,Automation System,Low
+EQ-0386,R-1386,Reactor,Utility Area,Process System,High
+EQ-0387,P-1387,Pump,Area 200,Electrical System,Medium
+EQ-0388,F-1388,Filter,Utility Area,HVAC System,High
+EQ-0389,HX-1389,Heat Exchanger,Area 300,Automation System,Medium
+EQ-0390,HX-1390,Heat Exchanger,Area 400,Automation System,Low
+EQ-0391,CP-1391,Control Panel,Utility Area,WFI System,Low
+EQ-0392,F-1392,Filter,Cleanroom Area,Automation System,Medium
+EQ-0393,F-1393,Filter,Area 100,WFI System,Medium
+EQ-0394,T-1394,Tank,Area 400,Automation System,Medium
+EQ-0395,P-1395,Pump,Utility Area,HVAC System,Medium
+EQ-0396,V-1396,Valve,Cleanroom Area,Process System,Undefined
+EQ-0397,F-1397,Filter,Area 200,Automation System,Low
+EQ-0398,R-1398,Reactor,Area 200,Electrical System,High
+EQ-0399,P-1399,Pump,Utility Area,Electrical System,High
+EQ-0400,V-1400,Valve,Area 100,HVAC System,Medium
+EQ-0401,R-1401,Reactor,Area 200,HVAC System,Low
+EQ-0402,V-1402,Valve,Area 400,Automation System,Low
+EQ-0403,F-1403,Filter,Cleanroom Area,Electrical System,High
+EQ-0404,HX-1404,Heat Exchanger,Utility Area,CIP System,Low
+EQ-0405,PS-1405,Pipe System,Cleanroom Area,HVAC System,Low
+EQ-0406,R-1406,Reactor,Area 300,CIP System,Medium
+EQ-0407,PS-1407,Pipe System,Utility Area,WFI System,Low
+EQ-0408,CP-1408,Control Panel,Utility Area,HVAC System,High
+EQ-0409,V-1409,Valve,Area 300,Automation System,Medium
+EQ-0410,V-1410,Valve,Area 300,WFI System,Low
+EQ-0411,V-1411,Valve,Cleanroom Area,Electrical System,Medium
+EQ-0412,PS-1412,Pipe System,Area 400,WFI System,Low
+EQ-0413,CP-1413,Control Panel,Area 300,Process System,Low
+EQ-0414,R-1414,Reactor,Area 400,WFI System,High
+EQ-0415,CP-1415,Control Panel,Area 100,WFI System,Low
+EQ-0416,T-1416,Tank,Area 300,HVAC System,Low
+EQ-0417,CP-1417,Control Panel,Cleanroom Area,HVAC System,High
+EQ-0418,V-1418,Valve,Utility Area,WFI System,Low
+EQ-0419,CP-1419,Control Panel,Area 200,Process System,Low
+EQ-0420,V-1420,Valve,Area 200,Process System,Low
+EQ-0421,V-1421,Valve,Cleanroom Area,CIP System,High
+EQ-0422,T-1422,Tank,Area 400,WFI System,Low
+EQ-0423,F-1423,Filter,Area 100,Electrical System,High
+EQ-0424,P-1424,Pump,Utility Area,CIP System,Medium
+EQ-0425,F-1425,Filter,Area 400,Electrical System,High
+EQ-0426,CP-1426,Control Panel,Area 300,WFI System,Low
+EQ-0427,P-1427,Pump,Area 100,Electrical System,Low
+EQ-0428,V-1428,Valve,Utility Area,Electrical System,Low
+EQ-0429,P-1429,Pump,Area 200,HVAC System,High
+EQ-0430,P-1430,Pump,Area 400,HVAC System,High
+EQ-0431,CP-1431,Control Panel,Area 100,Process System,Medium
+EQ-0432,T-1432,Tank,Area 300,WFI System,Medium
+EQ-0433,F-1433,Filter,Area 200,Automation System,Medium
+EQ-0434,CP-1434,Control Panel,Area 200,Process System,Medium
+EQ-0435,HX-1435,Heat Exchanger,Cleanroom Area,HVAC System,Low
+EQ-0436,CP-1436,Control Panel,Cleanroom Area,CIP System,High
+EQ-0437,PS-1437,Pipe System,Area 300,Automation System,Low
+EQ-0438,V-1438,Valve,Area 200,Automation System,Low
+EQ-0439,R-1439,Reactor,Area 400,Automation System,Medium
+EQ-0440,T-1440,Tank,Area 400,Electrical System,High
+EQ-0441,HX-1441,Heat Exchanger,Area 200,HVAC System,Medium
+EQ-0442,V-1442,Valve,Area 100,WFI System,Medium
+EQ-0443,V-1443,Valve,Area 400,WFI System,Medium
+EQ-0444,CP-1444,Control Panel,Utility Area,Electrical System,Low
+EQ-0445,P-1445,Pump,Area 300,Electrical System,Medium
+EQ-0446,V-1446,Valve,Area 100,Electrical System,High
+EQ-0447,F-1447,Filter,Area 300,CIP System,Medium
+EQ-0448,CP-1448,Control Panel,Cleanroom Area,Process System,Low
+EQ-0449,CP-1449,Control Panel,Area 300,Automation System,High
+EQ-0450,V-1450,Valve,Area 200,HVAC System,High
+EQ-0451,F-1451,Filter,Cleanroom Area,Automation System,Medium
+EQ-0452,R-1452,Reactor,Cleanroom Area,Automation System,Medium
+EQ-0453,V-1453,Valve,Area 200,Electrical System,Low
+EQ-0454,T-1454,Tank,Utility Area,HVAC System,Low
+EQ-0455,PS-1455,Pipe System,Area 100,Automation System,High
+EQ-0456,P-1456,Pump,Utility Area,Automation System,High
+EQ-0457,HX-1457,Heat Exchanger,Area 200,WFI System,Low
+EQ-0458,F-1458,Filter,Area 100,Electrical System,High
+EQ-0459,F-1459,Filter,Area 100,Automation System,Medium
+EQ-0460,P-1460,Pump,Area 400,CIP System,Low
+EQ-0461,R-1461,Reactor,Area 400,Automation System,High
+EQ-0462,F-1462,Filter,Cleanroom Area,WFI System,Low
+EQ-0463,P-1463,Pump,Area 400,WFI System,High
+EQ-0464,V-1464,Valve,Utility Area,Process System,High
+EQ-0465,R-1465,Reactor,Area 300,Electrical System,High
+EQ-0466,P-1466,Pump,Area 100,HVAC System,High
+EQ-0467,CP-1467,Control Panel,Area 400,CIP System,High
+EQ-0468,R-1468,Reactor,Area 300,HVAC System,Medium
+EQ-0469,R-1469,Reactor,Area 400,Process System,Low
+EQ-0470,HX-1470,Heat Exchanger,Cleanroom Area,WFI System,High
+EQ-0471,HX-1471,Heat Exchanger,Utility Area,HVAC System,Low
+EQ-0472,HX-1472,Heat Exchanger,Cleanroom Area,CIP System,High
+EQ-0473,P-1473,Pump,Area 300,HVAC System,Low
+EQ-0474,R-1474,Reactor,Utility Area,HVAC System,High
+EQ-0475,V-1475,Valve,Area 400,WFI System,High
+EQ-0476,CP-1476,Control Panel,Area 200,Electrical System,High
+EQ-0477,P-1477,Pump,Cleanroom Area,HVAC System,Low
+EQ-0478,P-1478,Pump,Area 200,CIP System,High
+EQ-0479,T-1479,Tank,Utility Area,Process System,Medium
+EQ-0480,P-1480,Pump,Area 200,Electrical System,High
+EQ-0481,R-1481,Reactor,Area 400,CIP System,Low
+EQ-0482,V-1482,Valve,Area 100,CIP System,Low
+EQ-0483,CP-1483,Control Panel,Area 200,Electrical System,Low
+EQ-0484,PS-1484,Pipe System,Utility Area,Automation System,Low
+EQ-0485,PS-1485,Pipe System,Area 200,WFI System,High
+EQ-0486,V-1486,Valve,Area 400,WFI System,Medium
+EQ-0487,P-1487,Pump,Utility Area,Automation System,Low
+EQ-0488,HX-1488,Heat Exchanger,Cleanroom Area,Electrical System,Medium
+EQ-0489,F-1489,Filter,Area 100,WFI System,Low
+EQ-0490,R-1490,Reactor,Utility Area,WFI System,Low
+EQ-0491,R-1491,Reactor,Area 400,CIP System,Medium
+EQ-0492,R-1492,Reactor,Area 200,Automation System,Medium
+EQ-0493,V-1493,Valve,Area 200,WFI System,Low
+EQ-0494,HX-1494,Heat Exchanger,Area 400,Process System,Low
+EQ-0495,R-1495,Reactor,Area 400,Automation System,Low
+EQ-0496,HX-1496,Heat Exchanger,Area 400,CIP System,Medium
+EQ-0497,V-1497,Valve,Area 300,Electrical System,High
+EQ-0498,F-1498,Filter,Area 300,Process System,Low
+EQ-0499,V-1499,Valve,Area 100,WFI System,Medium
+EQ-0500,P-1500,Pump,Area 100,CIP System,Low
+EQ-0501,V-1501,Valve,Area 400,CIP System,Medium
+EQ-0502,CP-1502,Control Panel,Area 100,CIP System,High
+EQ-0503,T-1503,Tank,Cleanroom Area,HVAC System,High
+EQ-0504,V-1504,Valve,Area 400,CIP System,Low
+EQ-0505,PS-1505,Pipe System,Area 300,HVAC System,Medium
+EQ-0506,PS-1506,Pipe System,Area 300,WFI System,Medium
+EQ-0507,F-1507,Filter,Area 400,Process System,Low
+EQ-0508,F-1508,Filter,Area 300,CIP System,Medium
+EQ-0509,PS-1509,Pipe System,Area 400,Process System,Low
+EQ-0510,V-1510,Valve,Cleanroom Area,CIP System,High
+EQ-0511,CP-1511,Control Panel,Utility Area,Automation System,Undefined
+EQ-0512,R-1512,Reactor,Area 300,CIP System,High
+EQ-0513,PS-1513,Pipe System,Area 200,HVAC System,Low
+EQ-0514,V-1514,Valve,Area 400,Automation System,Low
+EQ-0515,PS-1515,Pipe System,Area 300,HVAC System,Low
+EQ-0516,F-1516,Filter,Area 400,CIP System,Low
+EQ-0517,PS-1517,Pipe System,Area 200,CIP System,Low
+EQ-0518,F-1518,Filter,Area 200,Automation System,Low
+EQ-0519,P-1519,Pump,Utility Area,Process System,Undefined
+EQ-0520,P-1520,Pump,Area 100,HVAC System,High
+EQ-0521,V-1521,Valve,Area 100,Electrical System,High
+EQ-0522,P-1522,Pump,Area 200,Automation System,Medium
+EQ-0523,PS-1523,Pipe System,Area 100,Automation System,Low
+EQ-0524,F-1524,Filter,Cleanroom Area,HVAC System,High
+EQ-0525,P-1525,Pump,Utility Area,Automation System,Medium
+EQ-0526,P-1526,Pump,Area 100,Automation System,Low
+EQ-0527,CP-1527,Control Panel,Utility Area,WFI System,High
+EQ-0528,R-1528,Reactor,Area 200,Process System,High
+EQ-0529,HX-1529,Heat Exchanger,Area 200,CIP System,Low
+EQ-0530,CP-1530,Control Panel,Area 300,WFI System,Medium
+EQ-0531,T-1531,Tank,Area 300,HVAC System,Medium
+EQ-0532,V-1532,Valve,Cleanroom Area,CIP System,Medium
+EQ-0533,T-1533,Tank,Cleanroom Area,Electrical System,High
+EQ-0534,T-1534,Tank,Area 400,HVAC System,Medium
+EQ-0535,F-1535,Filter,Area 100,Electrical System,High
+EQ-0536,HX-1536,Heat Exchanger,Area 100,HVAC System,Medium
+EQ-0537,PS-1537,Pipe System,Utility Area,Process System,Low
+EQ-0538,P-1538,Pump,Area 200,CIP System,Low
+EQ-0539,F-1539,Filter,Area 300,Process System,High
+EQ-0540,CP-1540,Control Panel,Utility Area,Automation System,Low
+EQ-0541,P-1541,Pump,Area 200,WFI System,High
+EQ-0542,V-1542,Valve,Utility Area,CIP System,Low
+EQ-0543,R-1543,Reactor,Area 100,WFI System,High
+EQ-0544,V-1544,Valve,Utility Area,HVAC System,Low
+EQ-0545,PS-1545,Pipe System,Area 400,Electrical System,High
+EQ-0546,T-1546,Tank,Utility Area,Electrical System,Medium
+EQ-0547,P-1547,Pump,Area 100,HVAC System,High
+EQ-0548,T-1548,Tank,Area 300,Automation System,Low
+EQ-0549,R-1549,Reactor,Area 300,Process System,Low
+EQ-0550,CP-1550,Control Panel,Area 400,HVAC System,High
+EQ-0551,PS-1551,Pipe System,Utility Area,HVAC System,Undefined
+EQ-0552,HX-1552,Heat Exchanger,Cleanroom Area,Automation System,Low
+EQ-0553,R-1553,Reactor,Area 100,Automation System,Medium
+EQ-0554,V-1554,Valve,Cleanroom Area,Process System,High
+EQ-0555,CP-1555,Control Panel,Area 200,HVAC System,Undefined
+EQ-0556,HX-1556,Heat Exchanger,Cleanroom Area,HVAC System,Medium
+EQ-0557,PS-1557,Pipe System,Area 100,Process System,High
+EQ-0558,CP-1558,Control Panel,Area 400,WFI System,Medium
+EQ-0559,T-1559,Tank,Area 200,Process System,Undefined
+EQ-0560,R-1560,Reactor,Area 400,Automation System,Low
+EQ-0561,R-1561,Reactor,Area 100,Process System,High
+EQ-0562,PS-1562,Pipe System,Utility Area,Process System,Low
+EQ-0563,PS-1563,Pipe System,Area 400,Process System,Medium
+EQ-0564,R-1564,Reactor,Area 400,Process System,Low
+EQ-0565,V-1565,Valve,Utility Area,Automation System,High
+EQ-0566,R-1566,Reactor,Area 200,CIP System,Medium
+EQ-0567,CP-1567,Control Panel,Area 300,HVAC System,High
+EQ-0568,T-1568,Tank,Area 200,HVAC System,Medium
+EQ-0569,R-1569,Reactor,Area 300,HVAC System,High
+EQ-0570,PS-1570,Pipe System,Area 300,CIP System,Low
+EQ-0571,F-1571,Filter,Utility Area,Automation System,High
+EQ-0572,F-1572,Filter,Area 100,CIP System,Medium
+EQ-0573,P-1573,Pump,Area 400,WFI System,Low
+EQ-0574,R-1574,Reactor,Area 300,HVAC System,Medium
+EQ-0575,R-1575,Reactor,Cleanroom Area,Automation System,High
+EQ-0576,CP-1576,Control Panel,Area 300,Automation System,Low
+EQ-0577,V-1577,Valve,Area 400,WFI System,High
+EQ-0578,R-1578,Reactor,Area 300,WFI System,Low
+EQ-0579,F-1579,Filter,Utility Area,CIP System,Medium
+EQ-0580,R-1580,Reactor,Area 300,HVAC System,Medium
+EQ-0581,T-1581,Tank,Utility Area,CIP System,Low
+EQ-0582,HX-1582,Heat Exchanger,Cleanroom Area,Automation System,High
+EQ-0583,F-1583,Filter,Cleanroom Area,CIP System,Medium
+EQ-0584,CP-1584,Control Panel,Cleanroom Area,Process System,Medium
+EQ-0585,F-1585,Filter,Area 200,Electrical System,Medium
+EQ-0586,V-1586,Valve,Area 300,Electrical System,High
+EQ-0587,R-1587,Reactor,Area 400,Process System,Medium
+EQ-0588,F-1588,Filter,Utility Area,HVAC System,Low
+EQ-0589,R-1589,Reactor,Utility Area,Process System,Medium
+EQ-0590,T-1590,Tank,Area 100,CIP System,Low
+EQ-0591,PS-1591,Pipe System,Area 200,Electrical System,Low
+EQ-0592,P-1592,Pump,Utility Area,Electrical System,Low
+EQ-0593,R-1593,Reactor,Area 300,HVAC System,High
+EQ-0594,P-1594,Pump,Area 100,WFI System,High
+EQ-0595,V-1595,Valve,Area 400,WFI System,Medium
+EQ-0596,F-1596,Filter,Cleanroom Area,Automation System,Low
+EQ-0597,HX-1597,Heat Exchanger,Area 300,Process System,Medium
+EQ-0598,T-1598,Tank,Area 300,HVAC System,High
+EQ-0599,T-1599,Tank,Cleanroom Area,CIP System,Medium
+EQ-0600,CP-1600,Control Panel,Area 300,HVAC System,High
+EQ-0601,F-1601,Filter,Area 300,HVAC System,High
+EQ-0602,F-1602,Filter,Cleanroom Area,Electrical System,Medium
+EQ-0603,PS-1603,Pipe System,Area 100,WFI System,High
+EQ-0604,T-1604,Tank,Area 100,WFI System,Low
+EQ-0605,T-1605,Tank,Cleanroom Area,CIP System,Low
+EQ-0606,V-1606,Valve,Utility Area,CIP System,Low
+EQ-0607,HX-1607,Heat Exchanger,Area 300,Automation System,Medium
+EQ-0608,F-1608,Filter,Area 200,HVAC System,Low
+EQ-0609,HX-1609,Heat Exchanger,Area 200,Electrical System,Low
+EQ-0610,R-1610,Reactor,Area 400,Process System,Low
+EQ-0611,V-1611,Valve,Area 400,Automation System,Medium
+EQ-0612,R-1612,Reactor,Area 100,Electrical System,High
+EQ-0613,V-1613,Valve,Area 300,Electrical System,High
+EQ-0614,T-1614,Tank,Utility Area,CIP System,Medium
+EQ-0615,PS-1615,Pipe System,Area 200,HVAC System,High
+EQ-0616,CP-1616,Control Panel,Cleanroom Area,HVAC System,Low
+EQ-0617,PS-1617,Pipe System,Utility Area,HVAC System,Low
+EQ-0618,R-1618,Reactor,Utility Area,Process System,Medium
+EQ-0619,PS-1619,Pipe System,Area 400,Automation System,High
+EQ-0620,CP-1620,Control Panel,Utility Area,Automation System,High
+EQ-0621,HX-1621,Heat Exchanger,Area 300,Process System,High
+EQ-0622,CP-1622,Control Panel,Area 100,CIP System,Medium
+EQ-0623,HX-1623,Heat Exchanger,Utility Area,HVAC System,Medium
+EQ-0624,HX-1624,Heat Exchanger,Utility Area,HVAC System,Medium
+EQ-0625,HX-1625,Heat Exchanger,Area 400,Electrical System,Low
+EQ-0626,HX-1626,Heat Exchanger,Utility Area,CIP System,Medium
+EQ-0627,CP-1627,Control Panel,Area 200,CIP System,Medium
+EQ-0628,F-1628,Filter,Utility Area,Process System,Medium
+EQ-0629,P-1629,Pump,Area 400,CIP System,High
+EQ-0630,R-1630,Reactor,Utility Area,Automation System,Low
+EQ-0631,F-1631,Filter,Area 400,Electrical System,Medium
+EQ-0632,R-1632,Reactor,Cleanroom Area,HVAC System,Medium
+EQ-0633,HX-1633,Heat Exchanger,Area 100,Automation System,High
+EQ-0634,V-1634,Valve,Area 300,Process System,Medium
+EQ-0635,V-1635,Valve,Utility Area,WFI System,High
+EQ-0636,F-1636,Filter,Utility Area,Electrical System,Medium
+EQ-0637,T-1637,Tank,Utility Area,Process System,Medium
+EQ-0638,PS-1638,Pipe System,Utility Area,Process System,Low
+EQ-0639,F-1639,Filter,Utility Area,CIP System,Medium
+EQ-0640,T-1640,Tank,Cleanroom Area,Electrical System,High
+EQ-0641,CP-1641,Control Panel,Area 100,HVAC System,Medium
+EQ-0642,PS-1642,Pipe System,Area 100,HVAC System,High
+EQ-0643,V-1643,Valve,Area 200,Electrical System,Low
+EQ-0644,PS-1644,Pipe System,Cleanroom Area,Automation System,Low
+EQ-0645,R-1645,Reactor,Area 200,Automation System,High
+EQ-0646,V-1646,Valve,Area 200,Process System,Low
+EQ-0647,PS-1647,Pipe System,Utility Area,WFI System,Low
+EQ-0648,HX-1648,Heat Exchanger,Area 300,Electrical System,Medium
+EQ-0649,CP-1649,Control Panel,Utility Area,WFI System,Low
+EQ-0650,T-1650,Tank,Area 200,HVAC System,High
+EQ-0651,CP-1651,Control Panel,Cleanroom Area,CIP System,Undefined
+EQ-0652,HX-1652,Heat Exchanger,Area 200,CIP System,Low
+EQ-0653,PS-1653,Pipe System,Area 200,Electrical System,Medium
+EQ-0654,F-1654,Filter,Area 200,Automation System,Low
+EQ-0655,CP-1655,Control Panel,Cleanroom Area,HVAC System,Medium
+EQ-0656,F-1656,Filter,Area 100,Electrical System,High
+EQ-0657,R-1657,Reactor,Utility Area,Electrical System,Medium
+EQ-0658,PS-1658,Pipe System,Area 400,HVAC System,Medium
+EQ-0659,P-1659,Pump,Cleanroom Area,Process System,Low
+EQ-0660,F-1660,Filter,Cleanroom Area,Electrical System,Low
+EQ-0661,PS-1661,Pipe System,Area 100,Automation System,Medium
+EQ-0662,V-1662,Valve,Area 400,CIP System,Medium
+EQ-0663,CP-1663,Control Panel,Area 300,WFI System,Medium
+EQ-0664,HX-1664,Heat Exchanger,Utility Area,HVAC System,Medium
+EQ-0665,P-1665,Pump,Area 100,Process System,Low
+EQ-0666,F-1666,Filter,Area 100,Process System,High
+EQ-0667,F-1667,Filter,Area 400,Process System,Medium
+EQ-0668,V-1668,Valve,Cleanroom Area,CIP System,Low
+EQ-0669,CP-1669,Control Panel,Area 200,WFI System,High
+EQ-0670,PS-1670,Pipe System,Area 300,Process System,Medium
+EQ-0671,HX-1671,Heat Exchanger,Area 100,HVAC System,Low
+EQ-0672,CP-1672,Control Panel,Cleanroom Area,Electrical System,High
+EQ-0673,R-1673,Reactor,Cleanroom Area,Process System,Low
+EQ-0674,T-1674,Tank,Area 100,CIP System,Medium
+EQ-0675,T-1675,Tank,Area 200,Automation System,High
+EQ-0676,F-1676,Filter,Area 100,Process System,Low
+EQ-0677,PS-1677,Pipe System,Area 100,HVAC System,Low
+EQ-0678,HX-1678,Heat Exchanger,Area 400,Process System,High
+EQ-0679,R-1679,Reactor,Area 100,Electrical System,High
+EQ-0680,T-1680,Tank,Area 300,WFI System,Medium
+EQ-0681,HX-1681,Heat Exchanger,Area 400,CIP System,Low
+EQ-0682,HX-1682,Heat Exchanger,Area 100,Automation System,Low
+EQ-0683,P-1683,Pump,Utility Area,Electrical System,High
+EQ-0684,F-1684,Filter,Area 300,Electrical System,High
+EQ-0685,HX-1685,Heat Exchanger,Area 400,Automation System,Low
+EQ-0686,F-1686,Filter,Area 200,Process System,High
+EQ-0687,HX-1687,Heat Exchanger,Area 100,Automation System,Low
+EQ-0688,R-1688,Reactor,Area 300,HVAC System,Medium
+EQ-0689,HX-1689,Heat Exchanger,Area 200,WFI System,Low
+EQ-0690,T-1690,Tank,Area 200,Automation System,Low
+EQ-0691,CP-1691,Control Panel,Cleanroom Area,Process System,Low
+EQ-0692,CP-1692,Control Panel,Area 200,Automation System,Low
+EQ-0693,V-1693,Valve,Cleanroom Area,HVAC System,Medium
+EQ-0694,P-1694,Pump,Area 200,HVAC System,Medium
+EQ-0695,T-1695,Tank,Area 200,HVAC System,Low
+EQ-0696,T-1696,Tank,Utility Area,Process System,Medium
+EQ-0697,PS-1697,Pipe System,Area 200,HVAC System,Low
+EQ-0698,R-1698,Reactor,Area 300,Automation System,Low
+EQ-0699,HX-1699,Heat Exchanger,Area 400,Process System,High
+EQ-0700,T-1700,Tank,Area 100,WFI System,High
+EQ-0701,P-1701,Pump,Area 100,HVAC System,Low
+EQ-0702,CP-1702,Control Panel,Cleanroom Area,Electrical System,Low
+EQ-0703,R-1703,Reactor,Area 400,Electrical System,Medium
+EQ-0704,T-1704,Tank,Cleanroom Area,Automation System,Low
+EQ-0705,HX-1705,Heat Exchanger,Area 300,Process System,Medium
+EQ-0706,T-1706,Tank,Utility Area,CIP System,High
+EQ-0707,PS-1707,Pipe System,Area 400,Automation System,Low
+EQ-0708,T-1708,Tank,Area 300,Electrical System,Medium
+EQ-0709,V-1709,Valve,Area 100,CIP System,High
+EQ-0710,R-1710,Reactor,Area 100,HVAC System,Low
+EQ-0711,P-1711,Pump,Area 300,Electrical System,Low
+EQ-0712,HX-1712,Heat Exchanger,Area 100,Process System,Low
+EQ-0713,HX-1713,Heat Exchanger,Cleanroom Area,Process System,High
+EQ-0714,F-1714,Filter,Area 300,Automation System,Low
+EQ-0715,CP-1715,Control Panel,Area 200,WFI System,High
+EQ-0716,CP-1716,Control Panel,Cleanroom Area,Process System,High
+EQ-0717,PS-1717,Pipe System,Area 400,WFI System,Low
+EQ-0718,T-1718,Tank,Area 300,Electrical System,Low
+EQ-0719,T-1719,Tank,Area 400,HVAC System,Low
+EQ-0720,PS-1720,Pipe System,Area 100,HVAC System,Low
+EQ-0721,HX-1721,Heat Exchanger,Area 300,CIP System,Medium
+EQ-0722,T-1722,Tank,Utility Area,Electrical System,Low
+EQ-0723,T-1723,Tank,Area 200,Electrical System,Low
+EQ-0724,P-1724,Pump,Area 100,Process System,High
+EQ-0725,P-1725,Pump,Area 400,WFI System,Medium
+EQ-0726,HX-1726,Heat Exchanger,Area 200,Process System,Low
+EQ-0727,R-1727,Reactor,Area 200,WFI System,Undefined
+EQ-0728,R-1728,Reactor,Cleanroom Area,WFI System,Medium
+EQ-0729,T-1729,Tank,Utility Area,WFI System,High
+EQ-0730,P-1730,Pump,Area 200,CIP System,Low
+EQ-0731,P-1731,Pump,Area 400,Process System,Medium
+EQ-0732,CP-1732,Control Panel,Area 300,WFI System,High
+EQ-0733,F-1733,Filter,Area 100,WFI System,High
+EQ-0734,CP-1734,Control Panel,Utility Area,WFI System,Low
+EQ-0735,V-1735,Valve,Area 400,WFI System,Low
+EQ-0736,F-1736,Filter,Area 200,Electrical System,Low
+EQ-0737,V-1737,Valve,Area 200,Process System,Medium
+EQ-0738,P-1738,Pump,Area 200,Automation System,Medium
+EQ-0739,P-1739,Pump,Area 300,Process System,Low
+EQ-0740,R-1740,Reactor,Cleanroom Area,Electrical System,Medium
+EQ-0741,T-1741,Tank,Area 200,Automation System,High
+EQ-0742,R-1742,Reactor,Area 400,Process System,High
+EQ-0743,CP-1743,Control Panel,Area 100,Process System,Undefined
+EQ-0744,R-1744,Reactor,Cleanroom Area,WFI System,Medium
+EQ-0745,T-1745,Tank,Utility Area,Process System,Low
+EQ-0746,HX-1746,Heat Exchanger,Cleanroom Area,HVAC System,High
+EQ-0747,P-1747,Pump,Area 400,Electrical System,High
+EQ-0748,V-1748,Valve,Area 300,WFI System,Medium
+EQ-0749,R-1749,Reactor,Cleanroom Area,Electrical System,Medium
+EQ-0750,PS-1750,Pipe System,Area 400,WFI System,High
+EQ-0751,T-1751,Tank,Area 200,CIP System,Low
+EQ-0752,T-1752,Tank,Area 200,Process System,High
+EQ-0753,F-1753,Filter,Area 400,WFI System,Medium
+EQ-0754,T-1754,Tank,Utility Area,WFI System,High
+EQ-0755,F-1755,Filter,Area 300,HVAC System,Medium
+EQ-0756,T-1756,Tank,Area 100,CIP System,Low
+EQ-0757,CP-1757,Control Panel,Cleanroom Area,Electrical System,Low
+EQ-0758,P-1758,Pump,Area 200,WFI System,High
+EQ-0759,T-1759,Tank,Cleanroom Area,CIP System,Medium
+EQ-0760,R-1760,Reactor,Utility Area,Process System,Low
+EQ-0761,CP-1761,Control Panel,Area 300,CIP System,High
+EQ-0762,R-1762,Reactor,Area 400,Automation System,Low
+EQ-0763,V-1763,Valve,Area 100,HVAC System,High
+EQ-0764,HX-1764,Heat Exchanger,Area 100,Process System,High
+EQ-0765,V-1765,Valve,Area 200,CIP System,Medium
+EQ-0766,PS-1766,Pipe System,Cleanroom Area,Electrical System,Low
+EQ-0767,T-1767,Tank,Utility Area,Automation System,Medium
+EQ-0768,T-1768,Tank,Area 100,Process System,High
+EQ-0769,F-1769,Filter,Area 200,Process System,Medium
+EQ-0770,T-1770,Tank,Area 100,HVAC System,High
+EQ-0771,HX-1771,Heat Exchanger,Utility Area,HVAC System,Low
+EQ-0772,R-1772,Reactor,Area 400,Process System,Medium
+EQ-0773,R-1773,Reactor,Area 200,WFI System,High
+EQ-0774,HX-1774,Heat Exchanger,Area 300,WFI System,Medium
+EQ-0775,HX-1775,Heat Exchanger,Area 100,Automation System,Low
+EQ-0776,V-1776,Valve,Cleanroom Area,WFI System,Medium
+EQ-0777,R-1777,Reactor,Utility Area,HVAC System,High
+EQ-0778,T-1778,Tank,Area 300,HVAC System,High
+EQ-0779,R-1779,Reactor,Area 200,Electrical System,Low
+EQ-0780,V-1780,Valve,Cleanroom Area,Automation System,High
+EQ-0781,R-1781,Reactor,Cleanroom Area,WFI System,Medium
+EQ-0782,F-1782,Filter,Area 300,Automation System,Low
+EQ-0783,PS-1783,Pipe System,Area 400,WFI System,High
+EQ-0784,P-1784,Pump,Area 300,Automation System,High
+EQ-0785,P-1785,Pump,Area 300,Process System,Medium
+EQ-0786,PS-1786,Pipe System,Utility Area,CIP System,High
+EQ-0787,T-1787,Tank,Area 200,Electrical System,High
+EQ-0788,CP-1788,Control Panel,Utility Area,Electrical System,Undefined
+EQ-0789,V-1789,Valve,Utility Area,HVAC System,Medium
+EQ-0790,HX-1790,Heat Exchanger,Area 200,CIP System,Low
+EQ-0791,PS-1791,Pipe System,Cleanroom Area,Electrical System,Medium
+EQ-0792,P-1792,Pump,Cleanroom Area,Electrical System,Medium
+EQ-0793,HX-1793,Heat Exchanger,Utility Area,CIP System,Medium
+EQ-0794,CP-1794,Control Panel,Area 200,HVAC System,High
+EQ-0795,T-1795,Tank,Area 100,CIP System,Low
+EQ-0796,V-1796,Valve,Area 100,Automation System,Medium
+EQ-0797,P-1797,Pump,Area 300,Automation System,High
+EQ-0798,HX-1798,Heat Exchanger,Area 300,Electrical System,High
+EQ-0799,PS-1799,Pipe System,Area 100,Process System,High
+EQ-0800,HX-1800,Heat Exchanger,Area 100,Automation System,Medium
